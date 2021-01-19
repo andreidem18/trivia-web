@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Itim&display=swap');
+*{
+    font-family: 'Itim', sans-serif;
+    font-size: 1.25rem;
+}
+body{
+    background-image: url(./img/background.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Main */
+.form-select{
+    border-radius: 2rem;
+}
+.welcome{
+    padding: 20px 2%;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 30px;
+}
+.row{
+    --bs-gutter-x: 0;
+}
+
+
+/* Test */
+.card{
+    background-color: rgb(82, 0, 82);
+    border-radius: 30px;
+    padding: 20px;
+    border: 0;
+    transform: rotate(-2deg);
+}
+.card-body{
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    transform: rotate(1deg)
+}
+.card-body-question{
+    padding: 30px 20px;
+}
+.continue-button{
+    position: relative;
+    font-family: 'Fredoka One', sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: white;
+    border: 0;
+    border-radius: 2rem;
+    padding: .001rem 1rem;
+    font-size: 1.5rem;
+    position: relative;
+    top: 15px;
+    left: 25px;
+    box-shadow: 1px 1px 8px black;
+    transition: .2s;
+}
+.category-container{
+    position:relative;
+    top: -48px;
+}
+.category{
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    box-shadow: none;
+}
+.number{
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    box-shadow: none;
+}
+.submit-question{
+    -webkit-text-stroke: .5px black;
+    top: 50px;
+}
+.continue-button:hover{
+    transform: scale(1.1);
+    transition: .2s;
+}
+.answers input[type="radio"]{
+    display: none;
+}
+.answers .radio label{
+    padding: 5px 15px 5px 51px;
+    display: block;
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.answers .radio label:hover{
+    background: rgba(0,0,0,.1);
+}
+.answers .radio label:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    border: 3px solid rgba(0, 0, 0, 0.226);
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 15px
+}
+.answers input[type="radio"]:checked + label{
+    padding: 5px 15px;
+    background: rgba(0, 0, 0, 0.226)
+}
+.answers input[type="radio"]:checked + label:before{
+    display: none;
+}
+
+.container .position-relative .position-absolute{
+    z-index: 1;
+    max-width: 400px;
+}
+
+
+/* Results */
+
+.results{
+    width: 880px;
+    margin: 0 auto;
+}
+.success{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 350px;
+    color: rgb(13, 196, 13);
+    font-size: 2rem;
+}
+.container .d-flex .welcome p{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 200px;
+    text-align: center;
+}
+.container .d-flex .welcome p span,
+.container .d-flex .welcome .title span{
+    color: red;
+}
+.container .d-flex .welcome div{
+    position: absolute;
+    left: 0;
+    right: 60px;
+    bottom: 10px;
+}
+.container .d-flex .welcome div button{
+    position: static;
+    background: #fd7e14;
+}
+
+
+
+/* Generic classes */
+
+.h-vh{
+    height: 100vh;
+}
+.title{
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+}
+.text-buttons{
+    font-family: 'potta one';
+    font-size: 20px;
+}
+.color-violet{
+    background-color: rgb(82, 0, 82);
+}
+.color-green{
+    background-color: green;
+}
+.color-light-blue{
+    background-color: rgb(129, 232, 250);
+}
+.color-blue{
+    background-color: rgb(51, 71, 255);
+}
+.color-yellow{
+    background-color: rgb(243, 239, 1);
+}
+.color-red{
+    background-color: red;
+}
+.color-light-green{
+    background-color: rgb(9, 182, 9);
+}
+
+@media(min-width: 768px){
+    .card-body-question{
+        padding: 40px 80px;
+    }
+}
